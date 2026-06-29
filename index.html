@@ -1,0 +1,3753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaaS Product Landing Page & Customer Onboarding Portal</title>
+    <meta
+      name="description"
+      content="FlowDesk is the all-in-one SaaS platform for modern teams." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="mainNav">
+      <div class="container nav-inner">
+        <div class="nav-logo" onclick="goHome()">
+          <div class="lmark">
+            <svg viewBox="0 0 14 14" fill="none">
+              <rect
+                x="1"
+                y="1"
+                width="5"
+                height="5"
+                rx="1.5"
+                fill="white"
+                fill-opacity=".9" />
+              <rect
+                x="8"
+                y="1"
+                width="5"
+                height="5"
+                rx="1.5"
+                fill="white"
+                fill-opacity=".6" />
+              <rect
+                x="1"
+                y="8"
+                width="5"
+                height="5"
+                rx="1.5"
+                fill="white"
+                fill-opacity=".6" />
+              <rect
+                x="8"
+                y="8"
+                width="5"
+                height="5"
+                rx="1.5"
+                fill="white"
+                fill-opacity=".9" />
+            </svg>
+          </div>
+          FlowDesk
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#features">Features</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-r">
+          <button class="ib" onclick="toggleDark()" id="dkBtn">🌙</button>
+          <button class="btn btn-o btn-sm" onclick="goView('dashboard')">
+            Dashboard
+          </button>
+          <button class="btn btn-p btn-sm" onclick="goView('onboarding')">
+            Get started →
+          </button>
+          <button class="hbg" onclick="toggleMenu()" id="hbgBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="toast" id="toast"></div>
+    <!-- ═══════════ LANDING ═══════════ -->
+    <div id="landing" class="view active">
+      <!-- HERO -->
+      <section id="hero">
+        <div class="h-bg">
+          <div class="h-grid"></div>
+          <div class="h-orb1"></div>
+          <div class="h-orb2"></div>
+          <div class="blob b1"></div>
+          <div class="blob b2"></div>
+          <div class="blob b3"></div>
+          <div class="blob b4"></div>
+          <div class="blob b5"></div>
+        </div>
+        <div class="container h-layout">
+          <!-- Copy -->
+          <div>
+            <div
+              class="h-pill fi-up"
+              onclick="toast2('🎉 Now in public beta — 12K+ teams have joined!')">
+              <span class="h-pill-badge">New</span>
+              <span class="h-pill-text"
+                >AI Copilot is now live for all plans</span
+              >
+              <span class="h-pill-arr">→</span>
+            </div>
+
+            <h1 class="h-h1 fi-up">
+              Your whole business,<br />
+              <span>running on <span class="gt uw">autopilot</span></span>
+            </h1>
+
+            <p class="h-p fi-up">
+              FlowDesk unifies your team, automates the repetitive, and surfaces
+              insights that move the needle. One platform — infinite scale.
+            </p>
+
+            <div class="h-cta fi-up">
+              <button class="btn btn-p btn-lg" onclick="goView('onboarding')">
+                Start free — no card
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <path
+                    d="M2.5 7.5h10M8.5 3.5l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn-gh btn" onclick="goView('dashboard')">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <circle
+                    cx="7.5"
+                    cy="7.5"
+                    r="6"
+                    stroke="currentColor"
+                    stroke-width="1.5" />
+                  <path
+                    d="M5.5 7.5l2 2 3.5-3.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                See live demo
+              </button>
+            </div>
+
+            <div class="h-meta fi-up">
+              <div class="hm-item">
+                <div class="hm-icon">✓</div>
+                Free 14-day trial
+              </div>
+              <div class="hm-div"></div>
+              <div class="hm-item">
+                <div class="hm-icon">🔒</div>
+                SOC 2 certified
+              </div>
+              <div class="hm-div"></div>
+              <div class="hm-item">
+                <div class="hm-icon">⚡</div>
+                Setup in 5 min
+              </div>
+            </div>
+
+            <div class="sp-row fi-up">
+              <div class="av-st">
+                <div
+                  class="av-item"
+                  style="background: linear-gradient(135deg, #6c5ce7, #a29bfe)">
+                  JK
+                </div>
+                <div
+                  class="av-item"
+                  style="background: linear-gradient(135deg, #e84393, #fd79a8)">
+                  SR
+                </div>
+                <div
+                  class="av-item"
+                  style="background: linear-gradient(135deg, #00b894, #00cec9)">
+                  AL
+                </div>
+                <div
+                  class="av-item"
+                  style="background: linear-gradient(135deg, #fdcb6e, #e17055)">
+                  MR
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    color: #f59e0b;
+                    font-size: 12px;
+                    letter-spacing: 0.02em;
+                  ">
+                  ★★★★★
+                </div>
+                <div class="sp-txt">
+                  <strong>4.9/5</strong> from 3,200+ teams
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="h-vis fi-up">
+            <div class="fc fc1">
+              <div class="fc-ic fc-g">📈</div>
+              <div>
+                <div style="font-size: 10px; color: var(--ink3)">
+                  MRR Growth
+                </div>
+                <div style="color: var(--grn); font-weight: 700">
+                  +34% this month
+                </div>
+              </div>
+            </div>
+
+            <div class="hw-card">
+              <div class="hw-bar">
+                <div class="wd wd-r"></div>
+                <div class="wd wd-y"></div>
+                <div class="wd wd-g"></div>
+                <div class="hw-url">app.flowdesk.io/dashboard</div>
+              </div>
+              <div class="hw-body">
+                <div class="kpi-row">
+                  <div class="kpi-box">
+                    <div class="kv">$48K</div>
+                    <div class="kl">Revenue</div>
+                    <div class="kt up">↑ 12%</div>
+                  </div>
+                  <div class="kpi-box">
+                    <div class="kv">1.2K</div>
+                    <div class="kl">Users</div>
+                    <div class="kt up">↑ 28%</div>
+                  </div>
+                  <div class="kpi-box">
+                    <div class="kv">94%</div>
+                    <div class="kl">Retention</div>
+                    <div class="kt up">↑ 3%</div>
+                  </div>
+                </div>
+                <div class="spark">
+                  <div class="spark-hd">
+                    <div>
+                      <div class="spark-title">Revenue trend</div>
+                      <div class="spark-sub">↑ 22% vs last quarter</div>
+                    </div>
+                    <div class="spark-val">$48,240</div>
+                  </div>
+                  <svg viewBox="0 0 280 48" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+                        <stop
+                          offset="0%"
+                          stop-color="#6C5CE7"
+                          stop-opacity=".25" />
+                        <stop
+                          offset="100%"
+                          stop-color="#6C5CE7"
+                          stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M0 44C20 42,30 38,50 34C70 30,80 26,100 22C120 18,130 14,150 11C170 8,190 6,210 4C230 2,250 2,280 1L280 48L0 48Z"
+                      fill="url(#sg)" />
+                    <path
+                      d="M0 44C20 42,30 38,50 34C70 30,80 26,100 22C120 18,130 14,150 11C170 8,190 6,210 4C230 2,250 2,280 1"
+                      fill="none"
+                      stroke="#6C5CE7"
+                      stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="mfeed">
+                  <div class="mf-r">
+                    <div class="mf-dot" style="background: var(--grn)"></div>
+                    <div class="mf-txt">
+                      New signup: <strong>Acme Corp</strong> (Pro plan)
+                    </div>
+                    <div class="mf-t">2m</div>
+                  </div>
+                  <div class="mf-r">
+                    <div class="mf-dot" style="background: var(--acc)"></div>
+                    <div class="mf-txt">Automation #14 → 24 emails sent</div>
+                    <div class="mf-t">11m</div>
+                  </div>
+                  <div class="mf-r">
+                    <div class="mf-dot" style="background: var(--amb)"></div>
+                    <div class="mf-txt">
+                      Task #142 assigned to <strong>Sarah</strong>
+                    </div>
+                    <div class="mf-t">34m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fc fc2">
+              <div class="fc-ic fc-a">🔔</div>
+              <div>
+                <div style="font-size: 10px; color: var(--ink3)">Goal hit!</div>
+                <div>100 conversions</div>
+              </div>
+            </div>
+            <div class="fc fc3">
+              <div class="fc-ic fc-p">🤖</div>
+              <div>
+                <div style="font-size: 10px; color: var(--ink3)">
+                  AI Copilot
+                </div>
+                <div>Draft ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGOS -->
+      <div class="logos-sec">
+        <div class="logos-lbl">Trusted by teams at world-class companies</div>
+        <div class="mq-wrap">
+          <div class="mq-track">
+            <span class="logo-w">Vercel</span><span class="logo-w">Linear</span
+            ><span class="logo-w">Notion</span><span class="logo-w">Stripe</span
+            ><span class="logo-w">Figma</span><span class="logo-w">Loom</span
+            ><span class="logo-w">Descript</span><span class="logo-w">Coda</span
+            ><span class="logo-w">Webflow</span
+            ><span class="logo-w">Intercom</span>
+            <span class="logo-w">Vercel</span><span class="logo-w">Linear</span
+            ><span class="logo-w">Notion</span><span class="logo-w">Stripe</span
+            ><span class="logo-w">Figma</span><span class="logo-w">Loom</span
+            ><span class="logo-w">Descript</span><span class="logo-w">Coda</span
+            ><span class="logo-w">Webflow</span
+            ><span class="logo-w">Intercom</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <section id="features" class="section" style="background: var(--surf)">
+        <div class="container">
+          <div class="tc fi-up">
+            <div class="eyebrow">Features</div>
+            <div class="display">
+              Everything your team needs,<br />nothing they don't
+            </div>
+            <p class="sub" style="margin: 14px auto 0; text-align: center">
+              Cut tool sprawl and give every teammate a single place to work,
+              measure, and grow.
+            </p>
+          </div>
+          <div class="bento">
+            <div class="bc bc-feat bc1 fi-up">
+              <div class="bico-w" style="background: rgba(255, 255, 255, 0.15)">
+                ⚡
+              </div>
+              <div class="bt">Smart Automation</div>
+              <p class="bd" style="color: rgba(255, 255, 255, 0.78)">
+                Build no-code workflows that eliminate manual work. Trigger
+                actions across your whole stack based on any condition you
+                define.
+              </p>
+              <div class="btag" style="color: rgba(255, 255, 255, 0.75)">
+                Explore automations
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M2 6h8M7 3l3 3-3 3"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="bc bc2 fi-up s1">
+              <div class="bico-w bi-p">📊</div>
+              <div class="bt">Real-time Analytics</div>
+              <p class="bd">
+                Live dashboards, custom reports, and alerts. Know your
+                performance before your next standup.
+              </p>
+              <div class="btag">
+                View reporting
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M2 6h8M7 3l3 3-3 3"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="bc bc3 fi-up s2">
+              <div class="bico-w bi-g">🤝</div>
+              <div class="bt">Collab</div>
+              <p class="bd">
+                Shared inboxes, tasks, live docs — all in one place.
+              </p>
+            </div>
+            <div class="bc bc4 fi-up">
+              <div class="bico-w bi-a">🔌</div>
+              <div class="bt">200+ Integrations</div>
+              <p class="bd">
+                Slack, HubSpot, Salesforce, GitHub and hundreds more. Slots into
+                your existing stack in minutes.
+              </p>
+              <div class="btag">
+                Browse all
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M2 6h8M7 3l3 3-3 3"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="bc bc5 fi-up s1"
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+                align-items: center;
+              ">
+              <div>
+                <div class="bico-w bi-pk">🤖</div>
+                <div class="bt">AI Copilot</div>
+                <p class="bd">
+                  Draft replies, summarize threads, flag anomalies — so your
+                  team focuses on what humans do best.
+                </p>
+                <div class="btag">
+                  Try AI features
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M2 6h8M7 3l3 3-3 3"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--bg);
+                  border-radius: var(--rl);
+                  padding: 16px;
+                  border: 1px solid var(--bdr);
+                ">
+                <div
+                  style="
+                    font-size: 10.5px;
+                    font-weight: 600;
+                    color: var(--ink);
+                    margin-bottom: 10px;
+                    font-family: var(--fm);
+                  ">
+                  AI Copilot — suggestions
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 7px">
+                  <div
+                    style="
+                      background: var(--surf);
+                      border: 1px solid var(--bdr);
+                      border-radius: var(--r);
+                      padding: 8px 10px;
+                      font-size: 11px;
+                      color: var(--ink2);
+                    ">
+                    📝 Draft reply to Acme support ticket
+                  </div>
+                  <div
+                    style="
+                      background: var(--surf);
+                      border: 1px solid var(--bdr);
+                      border-radius: var(--r);
+                      padding: 8px 10px;
+                      font-size: 11px;
+                      color: var(--ink2);
+                    ">
+                    ⚡ Create automation for new signups
+                  </div>
+                  <div
+                    style="
+                      background: rgba(108, 92, 231, 0.08);
+                      border: 1px solid rgba(108, 92, 231, 0.18);
+                      border-radius: var(--r);
+                      padding: 8px 10px;
+                      font-size: 11px;
+                      color: var(--acc);
+                    ">
+                    📊 Revenue dipped 8% — investigate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section">
+        <div class="container">
+          <div class="tc fi-up">
+            <div class="eyebrow">How it works</div>
+            <div class="display">
+              From sign-up to results<br />in under 10 minutes
+            </div>
+          </div>
+          <div class="steps-row">
+            <div class="sc"></div>
+            <div class="step-c fi-up">
+              <div class="sn-wrap"><div class="sn-inner">1</div></div>
+              <div class="st">Create your workspace</div>
+              <p class="sd">
+                Sign up, invite your team, connect your tools. No IT ticket.
+                Done in five minutes.
+              </p>
+            </div>
+            <div class="step-c fi-up s1">
+              <div class="sn-wrap"><div class="sn-inner">2</div></div>
+              <div class="st">Configure your flows</div>
+              <p class="sd">
+                Use our visual builder to automate the repetitive. 80+ templates
+                or build from scratch — no code.
+              </p>
+            </div>
+            <div class="step-c fi-up s2">
+              <div class="sn-wrap"><div class="sn-inner">3</div></div>
+              <div class="st">Watch your metrics grow</div>
+              <p class="sd">
+                Track every KPI in real time. Set goals, receive alerts, share
+                reports in one click.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section style="padding: 0 30px 80px">
+        <div class="container">
+          <div class="stats-bn fi-up">
+            <div class="stat-i">
+              <div class="snum">12<span class="ssuf">K+</span></div>
+              <div class="slbl">Teams worldwide</div>
+            </div>
+            <div class="stat-i">
+              <div class="snum">$2.4<span class="ssuf">B</span></div>
+              <div class="slbl">Revenue managed</div>
+            </div>
+            <div class="stat-i">
+              <div class="snum">8.6<span class="ssuf">M</span></div>
+              <div class="slbl">Automations run</div>
+            </div>
+            <div class="stat-i">
+              <div class="snum">99.9<span class="ssuf">%</span></div>
+              <div class="slbl">Uptime SLA</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section
+        id="testimonials"
+        class="section"
+        style="background: var(--surf)">
+        <div class="container">
+          <div class="tc fi-up">
+            <div class="eyebrow">Customer stories</div>
+            <div class="display">Loved by teams that ship fast</div>
+          </div>
+          <div class="test-grid">
+            <div class="tc-card fi-up">
+              <div class="tc-stars">
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+              </div>
+              <p class="tc-q">
+                FlowDesk replaced five tools we were paying for separately. Our
+                ops team went from 12 hours of manual work per week to under
+                two. ROI showed up in the first billing cycle.
+              </p>
+              <div class="tc-auth">
+                <div
+                  class="tc-av"
+                  style="
+                    background: rgba(108, 92, 231, 0.12);
+                    color: var(--acc);
+                  ">
+                  JK
+                </div>
+                <div>
+                  <div class="tc-name">James Kim</div>
+                  <div class="tc-role">COO, Meridian Labs</div>
+                </div>
+              </div>
+            </div>
+            <div class="tc-card fi-up s1">
+              <div class="tc-stars">
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+              </div>
+              <p class="tc-q">
+                The onboarding was the smoothest I've seen for a B2B product. We
+                were live in a day. The AI Copilot alone is worth the
+                subscription — it's like a junior analyst on call 24/7.
+              </p>
+              <div class="tc-auth">
+                <div class="tc-av" style="background: #fee2e2; color: #991b1b">
+                  SR
+                </div>
+                <div>
+                  <div class="tc-name">Sophia Reyes</div>
+                  <div class="tc-role">Head of Growth, Orbit</div>
+                </div>
+              </div>
+            </div>
+            <div class="tc-card fi-up s2">
+              <div class="tc-stars">
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+                <div class="tc-star">★</div>
+              </div>
+              <p class="tc-q">
+                We scaled from 5 to 60 people without a single new ops hire.
+                FlowDesk handles the coordination layer automatically. I
+                recommend it to every founder I meet.
+              </p>
+              <div class="tc-auth">
+                <div class="tc-av" style="background: #d1fae5; color: #065f46">
+                  AL
+                </div>
+                <div>
+                  <div class="tc-name">Alex Lowe</div>
+                  <div class="tc-role">Founder, Draftly</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="tc fi-up">
+            <div class="eyebrow">Pricing</div>
+            <div class="display">Simple, honest pricing</div>
+            <p class="sub" style="margin: 14px auto 0; text-align: center">
+              No hidden fees. Cancel any time. Every plan includes a 14-day free
+              trial.
+            </p>
+          </div>
+          <div class="ptog-wrap fi-up">
+            <span class="ptog-lbl">Monthly</span>
+            <div class="ptog on" id="ptog" onclick="flipPrice()"></div>
+            <span class="ptog-lbl"
+              >Annual <span class="sp-pill">Save 20%</span></span
+            >
+          </div>
+          <div class="pg">
+            <div class="pc fi-up">
+              <div class="pp">Starter</div>
+              <div class="pa">
+                <span class="cu">$</span><span class="nm" id="pp1">15</span
+                ><span class="pr">/mo</span>
+              </div>
+              <p class="pd">
+                For freelancers and small teams just getting started.
+              </p>
+              <div class="pline"></div>
+              <div class="pfeats">
+                <div class="pf"><span class="py">✓</span>Up to 5 users</div>
+                <div class="pf"><span class="py">✓</span>3 automations</div>
+                <div class="pf"><span class="py">✓</span>Basic analytics</div>
+                <div class="pf"><span class="py">✓</span>10 integrations</div>
+                <div class="pf"><span class="pn">✗</span>AI Copilot</div>
+                <div class="pf"><span class="pn">✗</span>Priority support</div>
+              </div>
+              <button
+                class="btn btn-o"
+                style="width: 100%; justify-content: center"
+                onclick="goView('onboarding')">
+                Start free trial
+              </button>
+            </div>
+            <div class="pc hot fi-up s1">
+              <div class="hot-p">Most Popular</div>
+              <div class="pp">Pro</div>
+              <div class="pa">
+                <span class="cu">$</span><span class="nm" id="pp2">39</span
+                ><span class="pr">/mo</span>
+              </div>
+              <p class="pd">Full automation power for growing teams.</p>
+              <div class="pline"></div>
+              <div class="pfeats">
+                <div class="pf"><span class="py">✓</span>Up to 25 users</div>
+                <div class="pf">
+                  <span class="py">✓</span>Unlimited automations
+                </div>
+                <div class="pf">
+                  <span class="py">✓</span>Advanced analytics
+                </div>
+                <div class="pf"><span class="py">✓</span>100+ integrations</div>
+                <div class="pf"><span class="py">✓</span>AI Copilot</div>
+                <div class="pf"><span class="pn">✗</span>Priority support</div>
+              </div>
+              <button
+                class="btn btn-p"
+                style="width: 100%; justify-content: center"
+                onclick="goView('onboarding')">
+                Start free trial
+              </button>
+            </div>
+            <div class="pc fi-up s2">
+              <div class="pp">Enterprise</div>
+              <div class="pa">
+                <span class="cu">$</span><span class="nm" id="pp3">103</span
+                ><span class="pr">/mo</span>
+              </div>
+              <p class="pd">
+                Custom security and scale for large organisations.
+              </p>
+              <div class="pline"></div>
+              <div class="pfeats">
+                <div class="pf"><span class="py">✓</span>Unlimited users</div>
+                <div class="pf">
+                  <span class="py">✓</span>Unlimited automations
+                </div>
+                <div class="pf"><span class="py">✓</span>Custom dashboards</div>
+                <div class="pf"><span class="py">✓</span>All integrations</div>
+                <div class="pf"><span class="py">✓</span>AI Copilot</div>
+                <div class="pf">
+                  <span class="py">✓</span>Dedicated success manager
+                </div>
+              </div>
+              <button
+                class="btn btn-o"
+                style="width: 100%; justify-content: center"
+                onclick="goView('onboarding')">
+                Contact sales
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section" style="background: var(--surf)">
+        <div class="container">
+          <div class="tc fi-up">
+            <div class="eyebrow">FAQ</div>
+            <div class="display">Questions we get asked a lot</div>
+          </div>
+          <div class="faq-wrap fi-up">
+            <div class="faq-card">
+              <div class="fq-row">
+                <div class="fq-q" onclick="toggleFaq(this)">
+                  <span class="fq-qt"
+                    >Do I need a credit card to start my free trial?</span
+                  ><span class="fq-ic">+</span>
+                </div>
+                <div class="fq-a">
+                  <div class="fq-ain">
+                    No card required. Sign up with your email, explore every
+                    feature for 14 days, and only add payment details if you
+                    decide to continue. We remind you three days before the
+                    trial ends.
+                  </div>
+                </div>
+              </div>
+              <div class="fq-row">
+                <div class="fq-q" onclick="toggleFaq(this)">
+                  <span class="fq-qt">Can I switch plans as my team grows?</span
+                  ><span class="fq-ic">+</span>
+                </div>
+                <div class="fq-a">
+                  <div class="fq-ain">
+                    Yes — upgrade or downgrade any time from your account
+                    settings. Upgrades take effect immediately with prorated
+                    billing. We don't lock you into anything.
+                  </div>
+                </div>
+              </div>
+              <div class="fq-row">
+                <div class="fq-q" onclick="toggleFaq(this)">
+                  <span class="fq-qt">What integrations are available?</span
+                  ><span class="fq-ic">+</span>
+                </div>
+                <div class="fq-a">
+                  <div class="fq-ain">
+                    200+ tools including Slack, HubSpot, Salesforce, GitHub,
+                    Jira, Notion, Google Workspace, Microsoft 365, Stripe, and
+                    more. We also offer a REST API and a Zapier connector for
+                    custom integrations.
+                  </div>
+                </div>
+              </div>
+              <div class="fq-row">
+                <div class="fq-q" onclick="toggleFaq(this)">
+                  <span class="fq-qt">How secure is FlowDesk?</span
+                  ><span class="fq-ic">+</span>
+                </div>
+                <div class="fq-a">
+                  <div class="fq-ain">
+                    SOC 2 Type II certified and GDPR compliant. Data is
+                    encrypted at rest (AES-256) and in transit (TLS 1.3).
+                    Enterprise plans include SSO, SCIM, IP allowlisting, and
+                    full audit logs.
+                  </div>
+                </div>
+              </div>
+              <div class="fq-row">
+                <div class="fq-q" onclick="toggleFaq(this)">
+                  <span class="fq-qt">What does AI Copilot actually do?</span
+                  ><span class="fq-ic">+</span>
+                </div>
+                <div class="fq-a">
+                  <div class="fq-ain">
+                    It drafts email replies, summarizes threads, suggests
+                    automation rules, and flags anomalies. Context-aware and
+                    learns from your workspace. No data is used to train
+                    external models.
+                  </div>
+                </div>
+              </div>
+              <div class="fq-row">
+                <div class="fq-q" onclick="toggleFaq(this)">
+                  <span class="fq-qt">Can I cancel any time?</span
+                  ><span class="fq-ic">+</span>
+                </div>
+                <div class="fq-a">
+                  <div class="fq-ain">
+                    Yes. Cancel from billing settings any time. You keep access
+                    until the end of your billing period. We don't make it hard
+                    to find — it's in plain sight in your account.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="ct-layout">
+            <div class="fi-up">
+              <div class="eyebrow">Contact</div>
+              <div class="display">Let's talk</div>
+              <p class="sub" style="margin-top: 13px">
+                Have a question or want a custom demo? We typically reply within
+                2 hours.
+              </p>
+              <div class="ci-blocks">
+                <div class="ci-b">
+                  <div class="ci-ic">📧</div>
+                  <div>
+                    <div class="ci-lbl">Email</div>
+                    <div class="ci-val">ahmee07677@gmail.com</div>
+                  </div>
+                </div>
+                <div class="ci-b">
+                  <div class="ci-ic">💬</div>
+                  <div>
+                    <div class="ci-lbl">Live chat</div>
+                    <div class="ci-val">Mon–Fri, 9am–6pm GMT</div>
+                  </div>
+                </div>
+                <div class="ci-b">
+                  <div class="ci-ic">🏢</div>
+                  <div>
+                    <div class="ci-lbl">Office</div>
+                    <div class="ci-val">14 Carnaby St,Lahore</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fi-up s1">
+              <div class="cf-card">
+                <div class="cf-form">
+                  <div class="cfr">
+                    <div class="fg">
+                      <label class="lbl">First name</label
+                      ><input class="finput" id="c1" placeholder="James" />
+                    </div>
+                    <div class="fg">
+                      <label class="lbl">Last name</label
+                      ><input class="finput" id="c2" placeholder="Kim" />
+                    </div>
+                  </div>
+                  <div class="fg">
+                    <label class="lbl">Work email *</label
+                    ><input
+                      class="finput"
+                      id="c3"
+                      type="email"
+                      placeholder="james@company.com" />
+                    <div class="err" id="ce3">Please enter a valid email.</div>
+                  </div>
+                  <div class="fg">
+                    <label class="lbl">Company</label
+                    ><input
+                      class="finput"
+                      id="c4"
+                      placeholder="Meridian Labs" />
+                  </div>
+                  <div class="fg">
+                    <label class="lbl">Message</label
+                    ><textarea
+                      class="finput"
+                      id="c5"
+                      placeholder="Tell us how we can help…"></textarea>
+                  </div>
+                  <button
+                    class="btn btn-p"
+                    style="justify-content: center; width: 100%"
+                    onclick="sendContact()">
+                    Send message →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="fg-grid">
+            <div>
+              <div style="display: flex; align-items: center; gap: 7px">
+                <div class="lmark">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <rect
+                      x="1"
+                      y="1"
+                      width="5"
+                      height="5"
+                      rx="1.5"
+                      fill="white"
+                      fill-opacity=".9" />
+                    <rect
+                      x="8"
+                      y="1"
+                      width="5"
+                      height="5"
+                      rx="1.5"
+                      fill="white"
+                      fill-opacity=".6" />
+                    <rect
+                      x="1"
+                      y="8"
+                      width="5"
+                      height="5"
+                      rx="1.5"
+                      fill="white"
+                      fill-opacity=".6" />
+                    <rect
+                      x="8"
+                      y="8"
+                      width="5"
+                      height="5"
+                      rx="1.5"
+                      fill="white"
+                      fill-opacity=".9" />
+                  </svg>
+                </div>
+                <span
+                  style="
+                    font-family: var(--fh);
+                    font-size: 16px;
+                    font-weight: 800;
+                    color: #fff;
+                  "
+                  >FlowDesk</span
+                >
+              </div>
+              <p class="fb-desc">
+                The all-in-one platform for modern teams. Automate, analyse, and
+                grow — all from one place.
+              </p>
+              <div class="f-socs">
+                <a class="fs">𝕏</a><a class="fs">in</a><a class="fs">gh</a
+                ><a class="fs">yt</a>
+              </div>
+            </div>
+            <div>
+              <div class="fct">Product</div>
+              <div class="flinks">
+                <a href="#features">Features</a><a href="#pricing">Pricing</a
+                ><a href="#" onclick="goView('dashboard');return false"
+                  >Dashboard demo</a
+                ><a href="#">Changelog</a>
+              </div>
+            </div>
+            <div>
+              <div class="fct">Company</div>
+              <div class="flinks">
+                <a href="#">About</a><a href="#">Blog</a><a href="#">Careers</a
+                ><a href="#contact">Contact</a>
+              </div>
+            </div>
+            <div>
+              <div class="fct">Legal</div>
+              <div class="flinks">
+                <a href="#">Privacy</a><a href="#">Terms</a
+                ><a href="#">Cookies</a><a href="#">DPA</a>
+              </div>
+            </div>
+          </div>
+          <div class="fbot">
+            <span class="fcopy">© 2026 FlowDesk, Inc. All rights reserved.</span
+            ><span class="fcopy">Built to empower modern businesses.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ═══════════ ONBOARDING ═══════════ -->
+    <div id="onboarding" class="view">
+      <div class="ob-page">
+        <div class="ob-wrap">
+          <div class="ob-logo">
+            <div class="lmark">
+              <svg viewBox="0 0 14 14" fill="none">
+                <rect
+                  x="1"
+                  y="1"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".9" />
+                <rect
+                  x="8"
+                  y="1"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".6" />
+                <rect
+                  x="1"
+                  y="8"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".6" />
+                <rect
+                  x="8"
+                  y="8"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".9" />
+              </svg>
+            </div>
+            FlowDesk
+          </div>
+          <div class="pt">
+            <div class="ps-steps">
+              <div class="ps-item"><div class="ps-c curr" id="pc1">1</div></div>
+              <div class="ps-ln" id="pl1"></div>
+              <div class="ps-item"><div class="ps-c" id="pc2">2</div></div>
+              <div class="ps-ln" id="pl2"></div>
+              <div class="ps-item"><div class="ps-c" id="pc3">3</div></div>
+              <div class="ps-ln" id="pl3"></div>
+              <div class="ps-item"><div class="ps-c" id="pc4">4</div></div>
+            </div>
+            <div class="plabels">
+              <span class="plab curr" id="plab1">Account</span>
+              <span class="plab" id="plab2">Profile</span>
+              <span class="plab" id="plab3">Plan</span>
+              <span class="plab" id="plab4">Done!</span>
+            </div>
+          </div>
+          <div class="ob-card">
+            <!-- Step 1 -->
+            <div class="ob-step active" id="s1">
+              <div class="ob-h">Create your account</div>
+              <div class="ob-s">
+                Start your 14-day free trial. No credit card needed.
+              </div>
+              <div class="ob-form">
+                <div class="cfr">
+                  <div class="fg">
+                    <label class="lbl">First name *</label
+                    ><input class="finput" id="f1" placeholder="James" />
+                    <div class="err" id="e1">Enter your first name.</div>
+                  </div>
+                  <div class="fg">
+                    <label class="lbl">Last name *</label
+                    ><input class="finput" id="f2" placeholder="Kim" />
+                    <div class="err" id="e2">Enter your last name.</div>
+                  </div>
+                </div>
+                <div class="fg">
+                  <label class="lbl">Work email *</label
+                  ><input
+                    class="finput"
+                    id="f3"
+                    type="email"
+                    placeholder="james@company.com" />
+                  <div class="err" id="e3">Enter a valid email.</div>
+                </div>
+                <div class="fg">
+                  <label class="lbl">Password *</label
+                  ><input
+                    class="finput"
+                    id="f4"
+                    type="password"
+                    placeholder="Min. 8 characters" />
+                  <div class="err" id="e4">Password must be 8+ characters.</div>
+                </div>
+              </div>
+              <div class="ob-acts">
+                <button class="btn btn-o btn-sm" onclick="goHome()">
+                  ← Back to site
+                </button>
+                <button class="btn btn-p btn-sm" onclick="obNext(2)">
+                  Continue →
+                </button>
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="ob-step" id="s2">
+              <div class="ob-h">Tell us about yourself</div>
+              <div class="ob-s">
+                Help us personalise your workspace from day one.
+              </div>
+              <div class="ob-form">
+                <div class="fg">
+                  <label class="lbl">Company name *</label
+                  ><input class="finput" id="f5" placeholder="Meridian Labs" />
+                  <div class="err" id="e5">Enter your company name.</div>
+                </div>
+                <div class="fg">
+                  <label class="lbl">Team size</label
+                  ><select class="finput" id="f6">
+                    <option value="">Select team size</option>
+                    <option>Just me</option>
+                    <option>2–10 people</option>
+                    <option>11–50 people</option>
+                    <option>51–200 people</option>
+                    <option>200+ people</option>
+                  </select>
+                </div>
+                <div class="fg">
+                  <label class="lbl">Your role</label>
+                  <div class="role-g">
+                    <div class="ro" onclick="pickR(this)">
+                      <div class="ro-i">🚀</div>
+                      <div class="ro-n">Founder / CEO</div>
+                    </div>
+                    <div class="ro" onclick="pickR(this)">
+                      <div class="ro-i">📈</div>
+                      <div class="ro-n">Growth / Marketing</div>
+                    </div>
+                    <div class="ro" onclick="pickR(this)">
+                      <div class="ro-i">💻</div>
+                      <div class="ro-n">Engineering</div>
+                    </div>
+                    <div class="ro" onclick="pickR(this)">
+                      <div class="ro-i">⚙️</div>
+                      <div class="ro-n">Operations</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ob-acts">
+                <button class="btn btn-o btn-sm" onclick="obNext(1)">
+                  ← Back
+                </button>
+                <button class="btn btn-p btn-sm" onclick="obNext(3)">
+                  Continue →
+                </button>
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="ob-step" id="s3">
+              <div class="ob-h">Choose your plan</div>
+              <div class="ob-s">
+                All plans include a 14-day free trial. Switch any time.
+              </div>
+              <div class="ob-form">
+                <div class="plan-opts">
+                  <div class="po" onclick="pickP(this)">
+                    <div>
+                      <div class="po-n">Starter</div>
+                      <div class="po-s">Individuals &amp; small teams</div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 11px">
+                      <div class="po-p">
+                        $15<span
+                          style="
+                            font-size: 11px;
+                            font-weight: 500;
+                            color: var(--ink3);
+                          "
+                          >/mo</span
+                        >
+                      </div>
+                      <div class="po-r"></div>
+                    </div>
+                  </div>
+                  <div class="po sel" onclick="pickP(this)">
+                    <div>
+                      <div class="po-n">
+                        Pro
+                        <span
+                          class="chip"
+                          style="font-size: 9px; padding: 2px 7px"
+                          >Popular</span
+                        >
+                      </div>
+                      <div class="po-s">Full automation + AI Copilot</div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 11px">
+                      <div class="po-p">
+                        $39<span
+                          style="
+                            font-size: 11px;
+                            font-weight: 500;
+                            color: var(--ink3);
+                          "
+                          >/mo</span
+                        >
+                      </div>
+                      <div class="po-r"></div>
+                    </div>
+                  </div>
+                  <div class="po" onclick="pickP(this)">
+                    <div>
+                      <div class="po-n">Enterprise</div>
+                      <div class="po-s">Unlimited + dedicated support</div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 11px">
+                      <div class="po-p">
+                        $103<span
+                          style="
+                            font-size: 11px;
+                            font-weight: 500;
+                            color: var(--ink3);
+                          "
+                          >/mo</span
+                        >
+                      </div>
+                      <div class="po-r"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ob-acts">
+                <button class="btn btn-o btn-sm" onclick="obNext(2)">
+                  ← Back
+                </button>
+                <button class="btn btn-p btn-sm" onclick="obNext(4)">
+                  Start free trial →
+                </button>
+              </div>
+            </div>
+            <!-- Step 4 success -->
+            <div class="ob-step" id="s4">
+              <div class="suc-w">
+                <div class="suc-ic">🎉</div>
+                <div class="ob-h" style="text-align: center">
+                  You're all set!
+                </div>
+                <div
+                  class="ob-s"
+                  style="text-align: center; margin: 0 auto 22px">
+                  Your FlowDesk workspace is ready. Confirmation sent to your
+                  email. Let's explore your dashboard.
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                  ">
+                  <button
+                    class="btn btn-p btn-lg"
+                    onclick="goView('dashboard')">
+                    Open dashboard →
+                  </button>
+                  <button class="btn btn-o" onclick="goHome()">
+                    Back to site
+                  </button>
+                </div>
+                <div class="ns-box">
+                  <div class="ns-t">Your next steps:</div>
+                  <div class="ns-i">
+                    <span class="ns-done">✓</span>Account created
+                  </div>
+                  <div class="ns-i">
+                    <span class="ns-nxt">→</span>Connect your first integration
+                  </div>
+                  <div class="ns-i">
+                    <span class="ns-todo">○</span>Invite your team
+                  </div>
+                  <div class="ns-i">
+                    <span class="ns-todo">○</span>Build your first automation
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════ DASHBOARD ═══════════ -->
+    <div id="dashboard" class="view">
+      <div id="dsv" style="display: flex; min-height: 100vh">
+        <div
+          class="dsb-backdrop"
+          id="sidebarBackdrop"
+          onclick="toggleSidebar()"></div>
+        <aside class="dsb" id="sidebar">
+          <div class="dsb-lg">
+            <div
+              class="lmark"
+              style="width: 22px; height: 22px; border-radius: 6px">
+              <svg viewBox="0 0 14 14" fill="none">
+                <rect
+                  x="1"
+                  y="1"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".9" />
+                <rect
+                  x="8"
+                  y="1"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".6" />
+                <rect
+                  x="1"
+                  y="8"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".6" />
+                <rect
+                  x="8"
+                  y="8"
+                  width="5"
+                  height="5"
+                  rx="1.5"
+                  fill="white"
+                  fill-opacity=".9" />
+              </svg>
+            </div>
+            FlowDesk
+          </div>
+          <nav class="dsb-nav" id="dashNav">
+            <div class="dnsec">Main</div>
+            <div
+              class="dni act"
+              onclick="switchDash('overview')"
+              id="nav-overview">
+              <span class="dn-ic">🏠</span>Overview
+            </div>
+            <div
+              class="dni"
+              onclick="switchDash('analytics')"
+              id="nav-analytics">
+              <span class="dn-ic">📊</span>Analytics
+            </div>
+            <div
+              class="dni"
+              onclick="switchDash('automations')"
+              id="nav-automations">
+              <span class="dn-ic">⚡</span>Automations<span class="dnb">3</span>
+            </div>
+            <div class="dni" onclick="switchDash('tasks')" id="nav-tasks">
+              <span class="dn-ic">📋</span>Tasks
+            </div>
+            <div class="dni" onclick="switchDash('inbox')" id="nav-inbox">
+              <span class="dn-ic">📬</span>Inbox<span class="dnb">12</span>
+            </div>
+            <div class="dnsec">Team</div>
+            <div class="dni" onclick="switchDash('members')" id="nav-members">
+              <span class="dn-ic">👥</span>Members
+            </div>
+            <div class="dni" onclick="switchDash('projects')" id="nav-projects">
+              <span class="dn-ic">📁</span>Projects
+            </div>
+            <div
+              class="dni"
+              onclick="switchDash('integrations')"
+              id="nav-integrations">
+              <span class="dn-ic">🔌</span>Integrations
+            </div>
+            <div class="dnsec">Account</div>
+            <div class="dni" onclick="switchDash('settings')" id="nav-settings">
+              <span class="dn-ic">⚙️</span>Settings
+            </div>
+            <div class="dni" onclick="switchDash('billing')" id="nav-billing">
+              <span class="dn-ic">💳</span>Billing
+            </div>
+            <div
+              class="dnsec"
+              style="
+                margin-top: 8px;
+                padding-top: 12px;
+                border-top: 1px solid var(--bdr);
+              "></div>
+            <div
+              class="dni"
+              onclick="goHome()"
+              style="color: var(--acc); font-weight: 600">
+              <span class="dn-ic">🏠</span>Back to Site
+            </div>
+          </nav>
+          <div class="dsb-ft">
+            <div class="dsb-usr">
+              <div class="dsb-av">JK</div>
+              <div>
+                <div class="dsb-un">James Kim</div>
+                <div class="dsb-ur">Pro Plan</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="dsb-main">
+          <header class="dsb-tb">
+            <div style="display: flex; align-items: center; gap: 9px">
+              <button
+                class="ib"
+                onclick="toggleSidebar()"
+                id="sidebarToggleBtn"
+                style="display: flex">
+                ☰
+              </button>
+              <div class="dsb-pt">
+                Overview
+                <span
+                  style="
+                    font-size: 10.5px;
+                    font-weight: 500;
+                    color: var(--ink3);
+                    background: var(--bg);
+                    border: 1px solid var(--bdr);
+                    padding: 2px 8px;
+                    border-radius: 100px;
+                  "
+                  >June 2026</span
+                >
+              </div>
+            </div>
+            <div class="dsb-tbr">
+              <div class="dsb-srch">
+                <span style="color: var(--ink3); font-size: 12px">🔍</span
+                ><input placeholder="Search anything…" />
+              </div>
+              <button class="ib" onclick="toggleDark()">🌙</button>
+              <button class="ib">🔔</button>
+              <div class="dsb-av" style="cursor: pointer">JK</div>
+            </div>
+          </header>
+          <div class="dsb-ct">
+            <!-- ── OVERVIEW PANEL ── -->
+            <div class="dash-panel active" id="panel-overview">
+              <div class="dsh">
+                <span>Key metrics</span
+                ><span style="font-size: 11px; color: var(--ink3)"
+                  >June 2026</span
+                >
+              </div>
+              <div class="kpig">
+                <div class="kpic">
+                  <div class="kpic-i">💰</div>
+                  <div class="kpiv">$48,240</div>
+                  <div class="kpil">Monthly Revenue</div>
+                  <span class="kpid du">↑ 12.4%</span>
+                </div>
+                <div class="kpic">
+                  <div class="kpic-i">👤</div>
+                  <div class="kpiv">1,284</div>
+                  <div class="kpil">Active Users</div>
+                  <span class="kpid du">↑ 28.1%</span>
+                </div>
+                <div class="kpic">
+                  <div class="kpic-i">🎯</div>
+                  <div class="kpiv">94.2%</div>
+                  <div class="kpil">Retention Rate</div>
+                  <span class="kpid du">↑ 3.0%</span>
+                </div>
+                <div class="kpic">
+                  <div class="kpic-i">⚡</div>
+                  <div class="kpiv">8,601</div>
+                  <div class="kpil">Automations Run</div>
+                  <span class="kpid dd">↓ 2.1%</span>
+                </div>
+              </div>
+              <div class="dmir">
+                <div class="dc">
+                  <div class="dsh">
+                    <span>Revenue by month</span
+                    ><span class="dlnk" style="cursor: pointer">Export ↗</span>
+                  </div>
+                  <div class="bch" id="bch"></div>
+                </div>
+                <div class="dc">
+                  <div class="dsh">
+                    <span>Recent activity</span
+                    ><span class="dlnk" style="cursor: pointer">View all</span>
+                  </div>
+                  <div class="fdl">
+                    <div class="fi">
+                      <div class="fd" style="background: var(--grn)"></div>
+                      <div class="ft">
+                        <strong>Acme Corp</strong> upgraded to Enterprise
+                      </div>
+                      <div class="ftime">2m</div>
+                    </div>
+                    <div class="fi">
+                      <div class="fd" style="background: var(--acc)"></div>
+                      <div class="ft">
+                        Automation <strong>#14</strong> — 24 emails sent
+                      </div>
+                      <div class="ftime">11m</div>
+                    </div>
+                    <div class="fi">
+                      <div class="fd" style="background: var(--amb)"></div>
+                      <div class="ft">
+                        <strong>Sarah</strong> assigned Task #142
+                      </div>
+                      <div class="ftime">34m</div>
+                    </div>
+                    <div class="fi">
+                      <div class="fd" style="background: var(--acc)"></div>
+                      <div class="ft">
+                        <strong>HubSpot</strong> integration connected
+                      </div>
+                      <div class="ftime">1h</div>
+                    </div>
+                    <div class="fi">
+                      <div class="fd" style="background: var(--red)"></div>
+                      <div class="ft">
+                        Alert: API rate limit at <strong>88%</strong>
+                      </div>
+                      <div class="ftime">2h</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dbr">
+                <div class="dc">
+                  <div class="dsh">
+                    <span>Team members</span
+                    ><span
+                      class="dlnk"
+                      style="cursor: pointer"
+                      onclick="switchDash('members')"
+                      >Manage →</span
+                    >
+                  </div>
+                  <div class="tl">
+                    <div class="ti">
+                      <div
+                        class="tav"
+                        style="
+                          background: rgba(108, 92, 231, 0.12);
+                          color: var(--acc);
+                        ">
+                        JK
+                      </div>
+                      <div>
+                        <div class="tn">James Kim</div>
+                        <div class="tr">Owner · Pro</div>
+                      </div>
+                      <div class="ts">
+                        <div class="sd sd-on"></div>
+                        Online
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <div
+                        class="tav"
+                        style="background: #fee2e2; color: #991b1b">
+                        SR
+                      </div>
+                      <div>
+                        <div class="tn">Sarah Reyes</div>
+                        <div class="tr">Admin · Growth</div>
+                      </div>
+                      <div class="ts">
+                        <div class="sd sd-on"></div>
+                        Online
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <div
+                        class="tav"
+                        style="background: #d1fae5; color: #065f46">
+                        AL
+                      </div>
+                      <div>
+                        <div class="tn">Alex Lowe</div>
+                        <div class="tr">Member · Dev</div>
+                      </div>
+                      <div class="ts">
+                        <div class="sd sd-aw"></div>
+                        Away
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <div
+                        class="tav"
+                        style="background: #fef3c7; color: #92400e">
+                        MR
+                      </div>
+                      <div>
+                        <div class="tn">Maria Russo</div>
+                        <div class="tr">Member · Design</div>
+                      </div>
+                      <div class="ts">
+                        <div class="sd sd-on"></div>
+                        Online
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc">
+                  <div class="dsh">
+                    <span>My tasks</span
+                    ><span
+                      class="dlnk"
+                      style="cursor: pointer"
+                      onclick="switchDash('tasks')"
+                      >View all →</span
+                    >
+                  </div>
+                  <div class="tkl">
+                    <div class="tk dr">
+                      <div class="tc-k done-c">✓</div>
+                      <span class="tk-t">Set up HubSpot integration</span
+                      ><span class="tpill tp-h">High</span>
+                    </div>
+                    <div class="tk">
+                      <div class="tc-k"></div>
+                      <span class="tk-t">Review Q2 analytics report</span
+                      ><span class="tpill tp-h">High</span>
+                    </div>
+                    <div class="tk">
+                      <div class="tc-k"></div>
+                      <span class="tk-t">Invite 3 new team members</span
+                      ><span class="tpill tp-m">Med</span>
+                    </div>
+                    <div class="tk">
+                      <div class="tc-k"></div>
+                      <span class="tk-t">Configure email automation</span
+                      ><span class="tpill tp-m">Med</span>
+                    </div>
+                    <div class="tk dr">
+                      <div class="tc-k done-c">✓</div>
+                      <span class="tk-t">Update billing information</span
+                      ><span class="tpill tp-l">Low</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── ANALYTICS PANEL ── -->
+            <div class="dash-panel" id="panel-analytics">
+              <div class="dsh"><span>Analytics</span></div>
+              <div class="kpig" style="margin-bottom: 20px">
+                <div class="kpic">
+                  <div class="kpic-i">👁️</div>
+                  <div class="kpiv">42,810</div>
+                  <div class="kpil">Page Views</div>
+                  <span class="kpid du">↑ 18%</span>
+                </div>
+                <div class="kpic">
+                  <div class="kpic-i">⏱️</div>
+                  <div class="kpiv">3m 42s</div>
+                  <div class="kpil">Avg Session</div>
+                  <span class="kpid du">↑ 6%</span>
+                </div>
+                <div class="kpic">
+                  <div class="kpic-i">📉</div>
+                  <div class="kpiv">24.3%</div>
+                  <div class="kpil">Bounce Rate</div>
+                  <span class="kpid dd">↓ 2%</span>
+                </div>
+                <div class="kpic">
+                  <div class="kpic-i">🔄</div>
+                  <div class="kpiv">68%</div>
+                  <div class="kpil">Return Users</div>
+                  <span class="kpid du">↑ 5%</span>
+                </div>
+              </div>
+              <div class="dc" style="margin-bottom: 16px">
+                <div class="dsh"><span>Traffic by channel</span></div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-top: 8px;
+                  ">
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <div
+                      style="font-size: 12px; color: var(--ink2); width: 100px">
+                      Organic Search
+                    </div>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 8px;
+                        background: var(--bg);
+                        border-radius: 100px;
+                        overflow: hidden;
+                      ">
+                      <div
+                        style="
+                          height: 100%;
+                          width: 54%;
+                          background: var(--acc);
+                          border-radius: 100px;
+                        "></div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: var(--ink);
+                        width: 36px;
+                      ">
+                      54%
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <div
+                      style="font-size: 12px; color: var(--ink2); width: 100px">
+                      Direct
+                    </div>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 8px;
+                        background: var(--bg);
+                        border-radius: 100px;
+                        overflow: hidden;
+                      ">
+                      <div
+                        style="
+                          height: 100%;
+                          width: 22%;
+                          background: #a29bfe;
+                          border-radius: 100px;
+                        "></div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: var(--ink);
+                        width: 36px;
+                      ">
+                      22%
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <div
+                      style="font-size: 12px; color: var(--ink2); width: 100px">
+                      Social
+                    </div>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 8px;
+                        background: var(--bg);
+                        border-radius: 100px;
+                        overflow: hidden;
+                      ">
+                      <div
+                        style="
+                          height: 100%;
+                          width: 14%;
+                          background: #fd79a8;
+                          border-radius: 100px;
+                        "></div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: var(--ink);
+                        width: 36px;
+                      ">
+                      14%
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <div
+                      style="font-size: 12px; color: var(--ink2); width: 100px">
+                      Referral
+                    </div>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 8px;
+                        background: var(--bg);
+                        border-radius: 100px;
+                        overflow: hidden;
+                      ">
+                      <div
+                        style="
+                          height: 100%;
+                          width: 10%;
+                          background: var(--grn);
+                          border-radius: 100px;
+                        "></div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: var(--ink);
+                        width: 36px;
+                      ">
+                      10%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dc">
+                <div class="dsh"><span>Top pages</span></div>
+                <table
+                  style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 8px;
+                  ">
+                  <thead>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <th
+                        style="
+                          text-align: left;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 6px 0;
+                          font-weight: 600;
+                        ">
+                        Page
+                      </th>
+                      <th
+                        style="
+                          text-align: right;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 6px 0;
+                          font-weight: 600;
+                        ">
+                        Views
+                      </th>
+                      <th
+                        style="
+                          text-align: right;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 6px 0;
+                          font-weight: 600;
+                        ">
+                        Bounce
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <td
+                        style="
+                          font-size: 12.5px;
+                          color: var(--ink);
+                          padding: 9px 0;
+                        ">
+                        /dashboard
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--ink2);
+                          padding: 9px 0;
+                        ">
+                        12,840
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--grn);
+                          padding: 9px 0;
+                        ">
+                        18%
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <td
+                        style="
+                          font-size: 12.5px;
+                          color: var(--ink);
+                          padding: 9px 0;
+                        ">
+                        /pricing
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--ink2);
+                          padding: 9px 0;
+                        ">
+                        8,210
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--amb);
+                          padding: 9px 0;
+                        ">
+                        34%
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <td
+                        style="
+                          font-size: 12.5px;
+                          color: var(--ink);
+                          padding: 9px 0;
+                        ">
+                        /features
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--ink2);
+                          padding: 9px 0;
+                        ">
+                        6,504
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--amb);
+                          padding: 9px 0;
+                        ">
+                        28%
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          font-size: 12.5px;
+                          color: var(--ink);
+                          padding: 9px 0;
+                        ">
+                        /onboarding
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--ink2);
+                          padding: 9px 0;
+                        ">
+                        4,210
+                      </td>
+                      <td
+                        style="
+                          text-align: right;
+                          font-size: 12px;
+                          color: var(--grn);
+                          padding: 9px 0;
+                        ">
+                        12%
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- ── AUTOMATIONS PANEL ── -->
+            <div class="dash-panel" id="panel-automations">
+              <div class="dsh">
+                <span>Automations</span
+                ><button class="btn btn-p btn-sm">+ New automation</button>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  margin-top: 4px;
+                ">
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 18px 20px;
+                  ">
+                  <div style="display: flex; align-items: center; gap: 14px">
+                    <div
+                      style="
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 10px;
+                        background: rgba(108, 92, 231, 0.12);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                      ">
+                      ⚡
+                    </div>
+                    <div>
+                      <div
+                        style="
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: var(--ink);
+                        ">
+                        New signup welcome email
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink3);
+                          margin-top: 2px;
+                        ">
+                        Triggers on signup → sends email
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <span
+                      style="
+                        font-size: 11px;
+                        font-weight: 700;
+                        background: #d1fae5;
+                        color: #065f46;
+                        padding: 3px 9px;
+                        border-radius: 100px;
+                      "
+                      >Active</span
+                    >
+                    <span style="font-size: 12px; color: var(--ink3)"
+                      >1,240 runs</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 18px 20px;
+                  ">
+                  <div style="display: flex; align-items: center; gap: 14px">
+                    <div
+                      style="
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 10px;
+                        background: rgba(253, 203, 110, 0.18);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                      ">
+                      📬
+                    </div>
+                    <div>
+                      <div
+                        style="
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: var(--ink);
+                        ">
+                        Trial expiry reminder
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink3);
+                          margin-top: 2px;
+                        ">
+                        3 days before trial ends → sends nudge
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <span
+                      style="
+                        font-size: 11px;
+                        font-weight: 700;
+                        background: #d1fae5;
+                        color: #065f46;
+                        padding: 3px 9px;
+                        border-radius: 100px;
+                      "
+                      >Active</span
+                    >
+                    <span style="font-size: 12px; color: var(--ink3)"
+                      >840 runs</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 18px 20px;
+                  ">
+                  <div style="display: flex; align-items: center; gap: 14px">
+                    <div
+                      style="
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 10px;
+                        background: rgba(253, 121, 168, 0.12);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                      ">
+                      🔔
+                    </div>
+                    <div>
+                      <div
+                        style="
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: var(--ink);
+                        ">
+                        Churn risk alert
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink3);
+                          margin-top: 2px;
+                        ">
+                        Inactivity 7d → notify account manager
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px">
+                    <span
+                      style="
+                        font-size: 11px;
+                        font-weight: 700;
+                        background: #fef3c7;
+                        color: #92400e;
+                        padding: 3px 9px;
+                        border-radius: 100px;
+                      "
+                      >Paused</span
+                    >
+                    <span style="font-size: 12px; color: var(--ink3)"
+                      >320 runs</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── TASKS PANEL ── -->
+            <div class="dash-panel" id="panel-tasks">
+              <div class="dsh">
+                <span>Tasks</span
+                ><button class="btn btn-p btn-sm">+ Add task</button>
+              </div>
+              <div class="dc" style="margin-top: 4px">
+                <div
+                  style="
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: var(--ink3);
+                    margin-bottom: 12px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                  ">
+                  In Progress
+                </div>
+                <div class="tkl">
+                  <div class="tk">
+                    <div class="tc-k"></div>
+                    <span class="tk-t">Review Q2 analytics report</span
+                    ><span class="tpill tp-h">High</span>
+                  </div>
+                  <div class="tk">
+                    <div class="tc-k"></div>
+                    <span class="tk-t">Invite 3 new team members</span
+                    ><span class="tpill tp-m">Med</span>
+                  </div>
+                  <div class="tk">
+                    <div class="tc-k"></div>
+                    <span class="tk-t">Configure email automation flow</span
+                    ><span class="tpill tp-m">Med</span>
+                  </div>
+                  <div class="tk">
+                    <div class="tc-k"></div>
+                    <span class="tk-t">Prepare monthly investor report</span
+                    ><span class="tpill tp-h">High</span>
+                  </div>
+                  <div class="tk">
+                    <div class="tc-k"></div>
+                    <span class="tk-t">Design new onboarding flow</span
+                    ><span class="tpill tp-l">Low</span>
+                  </div>
+                </div>
+                <div
+                  style="
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: var(--ink3);
+                    margin: 18px 0 12px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                  ">
+                  Completed
+                </div>
+                <div class="tkl">
+                  <div class="tk dr">
+                    <div class="tc-k done-c">✓</div>
+                    <span class="tk-t">Set up HubSpot integration</span
+                    ><span class="tpill tp-h">High</span>
+                  </div>
+                  <div class="tk dr">
+                    <div class="tc-k done-c">✓</div>
+                    <span class="tk-t">Update billing information</span
+                    ><span class="tpill tp-l">Low</span>
+                  </div>
+                  <div class="tk dr">
+                    <div class="tc-k done-c">✓</div>
+                    <span class="tk-t">Connect Slack notifications</span
+                    ><span class="tpill tp-m">Med</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── INBOX PANEL ── -->
+            <div class="dash-panel" id="panel-inbox">
+              <div class="dsh">
+                <span>Inbox</span
+                ><span
+                  style="
+                    background: var(--acc);
+                    color: #fff;
+                    font-size: 11px;
+                    font-weight: 700;
+                    padding: 2px 9px;
+                    border-radius: 100px;
+                  "
+                  >12 unread</span
+                >
+              </div>
+              <div class="dc" style="margin-top: 4px; padding: 0">
+                <div style="display: flex; flex-direction: column">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: flex-start;
+                      gap: 12px;
+                      padding: 16px 20px;
+                      border-bottom: 1px solid var(--bdr);
+                      cursor: pointer;
+                      transition: background var(--t);
+                    "
+                    onmouseover="this.style.background='var(--bg)'"
+                    onmouseout="this.style.background=''">
+                    <div
+                      style="
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background: rgba(108, 92, 231, 0.12);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: var(--fh);
+                        font-size: 12px;
+                        font-weight: 800;
+                        color: var(--acc);
+                        flex-shrink: 0;
+                      ">
+                      AC
+                    </div>
+                    <div style="flex: 1; min-width: 0">
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: baseline;
+                        ">
+                        <span
+                          style="
+                            font-size: 13.5px;
+                            font-weight: 700;
+                            color: var(--ink);
+                          "
+                          >Acme Corp</span
+                        ><span style="font-size: 10.5px; color: var(--ink3)"
+                          >2m ago</span
+                        >
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink2);
+                          margin-top: 2px;
+                        ">
+                        Need help upgrading our Enterprise plan seats...
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: var(--acc);
+                        flex-shrink: 0;
+                        margin-top: 4px;
+                      "></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: flex-start;
+                      gap: 12px;
+                      padding: 16px 20px;
+                      border-bottom: 1px solid var(--bdr);
+                      cursor: pointer;
+                      transition: background var(--t);
+                    "
+                    onmouseover="this.style.background='var(--bg)'"
+                    onmouseout="this.style.background=''">
+                    <div
+                      style="
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background: #fee2e2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: var(--fh);
+                        font-size: 12px;
+                        font-weight: 800;
+                        color: #991b1b;
+                        flex-shrink: 0;
+                      ">
+                      SR
+                    </div>
+                    <div style="flex: 1; min-width: 0">
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: baseline;
+                        ">
+                        <span
+                          style="
+                            font-size: 13.5px;
+                            font-weight: 700;
+                            color: var(--ink);
+                          "
+                          >Sarah Reyes</span
+                        ><span style="font-size: 10.5px; color: var(--ink3)"
+                          >1h ago</span
+                        >
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink2);
+                          margin-top: 2px;
+                        ">
+                        The Q2 report is ready for your review.
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: var(--acc);
+                        flex-shrink: 0;
+                        margin-top: 4px;
+                      "></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: flex-start;
+                      gap: 12px;
+                      padding: 16px 20px;
+                      border-bottom: 1px solid var(--bdr);
+                      cursor: pointer;
+                      transition: background var(--t);
+                    "
+                    onmouseover="this.style.background='var(--bg)'"
+                    onmouseout="this.style.background=''">
+                    <div
+                      style="
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background: #d1fae5;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: var(--fh);
+                        font-size: 12px;
+                        font-weight: 800;
+                        color: #065f46;
+                        flex-shrink: 0;
+                      ">
+                      AL
+                    </div>
+                    <div style="flex: 1; min-width: 0">
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: baseline;
+                        ">
+                        <span
+                          style="
+                            font-size: 13.5px;
+                            font-weight: 600;
+                            color: var(--ink2);
+                          "
+                          >Alex Lowe</span
+                        ><span style="font-size: 10.5px; color: var(--ink3)"
+                          >3h ago</span
+                        >
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink3);
+                          margin-top: 2px;
+                        ">
+                        Pushed the new API changes to staging.
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: flex-start;
+                      gap: 12px;
+                      padding: 16px 20px;
+                      cursor: pointer;
+                      transition: background var(--t);
+                    "
+                    onmouseover="this.style.background='var(--bg)'"
+                    onmouseout="this.style.background=''">
+                    <div
+                      style="
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background: #fef3c7;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: var(--fh);
+                        font-size: 12px;
+                        font-weight: 800;
+                        color: #92400e;
+                        flex-shrink: 0;
+                      ">
+                      MR
+                    </div>
+                    <div style="flex: 1; min-width: 0">
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: baseline;
+                        ">
+                        <span
+                          style="
+                            font-size: 13.5px;
+                            font-weight: 600;
+                            color: var(--ink2);
+                          "
+                          >Maria Russo</span
+                        ><span style="font-size: 10.5px; color: var(--ink3)"
+                          >5h ago</span
+                        >
+                      </div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          color: var(--ink3);
+                          margin-top: 2px;
+                        ">
+                        New design mockups are in the shared folder.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── MEMBERS PANEL ── -->
+            <div class="dash-panel" id="panel-members">
+              <div class="dsh">
+                <span>Team members</span
+                ><button class="btn btn-p btn-sm">+ Invite member</button>
+              </div>
+              <div class="dc" style="margin-top: 4px; padding: 0">
+                <table style="width: 100%; border-collapse: collapse">
+                  <thead>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <th
+                        style="
+                          text-align: left;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 12px 20px;
+                          font-weight: 600;
+                        ">
+                        Member
+                      </th>
+                      <th
+                        style="
+                          text-align: left;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 12px 0;
+                          font-weight: 600;
+                        ">
+                        Role
+                      </th>
+                      <th
+                        style="
+                          text-align: left;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 12px 0;
+                          font-weight: 600;
+                        ">
+                        Status
+                      </th>
+                      <th
+                        style="
+                          text-align: left;
+                          font-size: 11px;
+                          color: var(--ink3);
+                          padding: 12px 0;
+                          font-weight: 600;
+                        ">
+                        Joined
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <td style="padding: 12px 20px">
+                        <div
+                          style="display: flex; align-items: center; gap: 10px">
+                          <div
+                            class="tav"
+                            style="
+                              background: rgba(108, 92, 231, 0.12);
+                              color: var(--acc);
+                              width: 32px;
+                              height: 32px;
+                              border-radius: 50%;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-family: var(--fh);
+                              font-size: 11px;
+                              font-weight: 800;
+                            ">
+                            JK
+                          </div>
+                          <div>
+                            <div
+                              style="
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: var(--ink);
+                              ">
+                              James Kim
+                            </div>
+                            <div style="font-size: 11px; color: var(--ink3)">
+                              james@company.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="font-size: 12.5px; color: var(--ink2)">
+                        Owner
+                      </td>
+                      <td>
+                        <span
+                          style="
+                            background: #d1fae5;
+                            color: #065f46;
+                            font-size: 11px;
+                            font-weight: 700;
+                            padding: 2px 8px;
+                            border-radius: 100px;
+                          "
+                          >Online</span
+                        >
+                      </td>
+                      <td style="font-size: 12px; color: var(--ink3)">
+                        Jan 2024
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <td style="padding: 12px 20px">
+                        <div
+                          style="display: flex; align-items: center; gap: 10px">
+                          <div
+                            style="
+                              width: 32px;
+                              height: 32px;
+                              border-radius: 50%;
+                              background: #fee2e2;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-family: var(--fh);
+                              font-size: 11px;
+                              font-weight: 800;
+                              color: #991b1b;
+                            ">
+                            SR
+                          </div>
+                          <div>
+                            <div
+                              style="
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: var(--ink);
+                              ">
+                              Sarah Reyes
+                            </div>
+                            <div style="font-size: 11px; color: var(--ink3)">
+                              sarah@company.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="font-size: 12.5px; color: var(--ink2)">
+                        Admin
+                      </td>
+                      <td>
+                        <span
+                          style="
+                            background: #d1fae5;
+                            color: #065f46;
+                            font-size: 11px;
+                            font-weight: 700;
+                            padding: 2px 8px;
+                            border-radius: 100px;
+                          "
+                          >Online</span
+                        >
+                      </td>
+                      <td style="font-size: 12px; color: var(--ink3)">
+                        Feb 2024
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--bdr)">
+                      <td style="padding: 12px 20px">
+                        <div
+                          style="display: flex; align-items: center; gap: 10px">
+                          <div
+                            style="
+                              width: 32px;
+                              height: 32px;
+                              border-radius: 50%;
+                              background: #d1fae5;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-family: var(--fh);
+                              font-size: 11px;
+                              font-weight: 800;
+                              color: #065f46;
+                            ">
+                            AL
+                          </div>
+                          <div>
+                            <div
+                              style="
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: var(--ink);
+                              ">
+                              Alex Lowe
+                            </div>
+                            <div style="font-size: 11px; color: var(--ink3)">
+                              alex@company.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="font-size: 12.5px; color: var(--ink2)">
+                        Member
+                      </td>
+                      <td>
+                        <span
+                          style="
+                            background: #fef3c7;
+                            color: #92400e;
+                            font-size: 11px;
+                            font-weight: 700;
+                            padding: 2px 8px;
+                            border-radius: 100px;
+                          "
+                          >Away</span
+                        >
+                      </td>
+                      <td style="font-size: 12px; color: var(--ink3)">
+                        Mar 2024
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 12px 20px">
+                        <div
+                          style="display: flex; align-items: center; gap: 10px">
+                          <div
+                            style="
+                              width: 32px;
+                              height: 32px;
+                              border-radius: 50%;
+                              background: #fef3c7;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-family: var(--fh);
+                              font-size: 11px;
+                              font-weight: 800;
+                              color: #92400e;
+                            ">
+                            MR
+                          </div>
+                          <div>
+                            <div
+                              style="
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: var(--ink);
+                              ">
+                              Maria Russo
+                            </div>
+                            <div style="font-size: 11px; color: var(--ink3)">
+                              maria@company.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="font-size: 12.5px; color: var(--ink2)">
+                        Member
+                      </td>
+                      <td>
+                        <span
+                          style="
+                            background: #d1fae5;
+                            color: #065f46;
+                            font-size: 11px;
+                            font-weight: 700;
+                            padding: 2px 8px;
+                            border-radius: 100px;
+                          "
+                          >Online</span
+                        >
+                      </td>
+                      <td style="font-size: 12px; color: var(--ink3)">
+                        Apr 2024
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- ── PROJECTS PANEL ── -->
+            <div class="dash-panel" id="panel-projects">
+              <div class="dsh">
+                <span>Projects</span
+                ><button class="btn btn-p btn-sm">+ New project</button>
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 14px;
+                  margin-top: 4px;
+                ">
+                <div
+                  class="dc"
+                  style="cursor: pointer"
+                  onmouseover="this.style.borderColor='rgba(108,92,231,.25)'"
+                  onmouseout="this.style.borderColor='var(--bdr)'">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    ">
+                    <div
+                      style="
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: var(--ink);
+                      ">
+                      Q3 Growth Campaign
+                    </div>
+                    <span
+                      style="
+                        background: #d1fae5;
+                        color: #065f46;
+                        font-size: 10.5px;
+                        font-weight: 700;
+                        padding: 2px 8px;
+                        border-radius: 100px;
+                      "
+                      >Active</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 12.5px;
+                      color: var(--ink2);
+                      margin-bottom: 14px;
+                    ">
+                    Marketing + automation initiatives for Q3.
+                  </div>
+                  <div
+                    style="
+                      height: 5px;
+                      background: var(--bg);
+                      border-radius: 100px;
+                      margin-bottom: 8px;
+                    ">
+                    <div
+                      style="
+                        height: 100%;
+                        width: 68%;
+                        background: var(--acc);
+                        border-radius: 100px;
+                      "></div>
+                  </div>
+                  <div style="font-size: 11px; color: var(--ink3)">
+                    68% complete · 4 members
+                  </div>
+                </div>
+                <div
+                  class="dc"
+                  style="cursor: pointer"
+                  onmouseover="this.style.borderColor='rgba(108,92,231,.25)'"
+                  onmouseout="this.style.borderColor='var(--bdr)'">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    ">
+                    <div
+                      style="
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: var(--ink);
+                      ">
+                      Platform Redesign
+                    </div>
+                    <span
+                      style="
+                        background: #fef3c7;
+                        color: #92400e;
+                        font-size: 10.5px;
+                        font-weight: 700;
+                        padding: 2px 8px;
+                        border-radius: 100px;
+                      "
+                      >In Review</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 12.5px;
+                      color: var(--ink2);
+                      margin-bottom: 14px;
+                    ">
+                    New UI for dashboard and onboarding flows.
+                  </div>
+                  <div
+                    style="
+                      height: 5px;
+                      background: var(--bg);
+                      border-radius: 100px;
+                      margin-bottom: 8px;
+                    ">
+                    <div
+                      style="
+                        height: 100%;
+                        width: 42%;
+                        background: #a29bfe;
+                        border-radius: 100px;
+                      "></div>
+                  </div>
+                  <div style="font-size: 11px; color: var(--ink3)">
+                    42% complete · 2 members
+                  </div>
+                </div>
+                <div
+                  class="dc"
+                  style="cursor: pointer"
+                  onmouseover="this.style.borderColor='rgba(108,92,231,.25)'"
+                  onmouseout="this.style.borderColor='var(--bdr)'">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    ">
+                    <div
+                      style="
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: var(--ink);
+                      ">
+                      API v2 Launch
+                    </div>
+                    <span
+                      style="
+                        background: #d1fae5;
+                        color: #065f46;
+                        font-size: 10.5px;
+                        font-weight: 700;
+                        padding: 2px 8px;
+                        border-radius: 100px;
+                      "
+                      >Active</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 12.5px;
+                      color: var(--ink2);
+                      margin-bottom: 14px;
+                    ">
+                    New REST API with improved rate limits.
+                  </div>
+                  <div
+                    style="
+                      height: 5px;
+                      background: var(--bg);
+                      border-radius: 100px;
+                      margin-bottom: 8px;
+                    ">
+                    <div
+                      style="
+                        height: 100%;
+                        width: 85%;
+                        background: var(--grn);
+                        border-radius: 100px;
+                      "></div>
+                  </div>
+                  <div style="font-size: 11px; color: var(--ink3)">
+                    85% complete · 3 members
+                  </div>
+                </div>
+                <div
+                  class="dc"
+                  style="cursor: pointer"
+                  onmouseover="this.style.borderColor='rgba(108,92,231,.25)'"
+                  onmouseout="this.style.borderColor='var(--bdr)'">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    ">
+                    <div
+                      style="
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: var(--ink);
+                      ">
+                      Customer Research
+                    </div>
+                    <span
+                      style="
+                        background: #fee2e2;
+                        color: #991b1b;
+                        font-size: 10.5px;
+                        font-weight: 700;
+                        padding: 2px 8px;
+                        border-radius: 100px;
+                      "
+                      >Planned</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 12.5px;
+                      color: var(--ink2);
+                      margin-bottom: 14px;
+                    ">
+                    User interviews and NPS survey rollout.
+                  </div>
+                  <div
+                    style="
+                      height: 5px;
+                      background: var(--bg);
+                      border-radius: 100px;
+                      margin-bottom: 8px;
+                    ">
+                    <div
+                      style="
+                        height: 100%;
+                        width: 10%;
+                        background: var(--red);
+                        border-radius: 100px;
+                      "></div>
+                  </div>
+                  <div style="font-size: 11px; color: var(--ink3)">
+                    10% complete · 2 members
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── INTEGRATIONS PANEL ── -->
+            <div class="dash-panel" id="panel-integrations">
+              <div class="dsh">
+                <span>Integrations</span
+                ><button class="btn btn-p btn-sm">+ Connect new</button>
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 12px;
+                  margin-top: 4px;
+                ">
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 16px 18px;
+                  ">
+                  <div style="font-size: 24px">💬</div>
+                  <div style="flex: 1">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--ink);
+                      ">
+                      Slack
+                    </div>
+                    <div style="font-size: 11px; color: var(--ink3)">
+                      #general connected
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      background: #d1fae5;
+                      color: #065f46;
+                      font-size: 10.5px;
+                      font-weight: 700;
+                      padding: 2px 8px;
+                      border-radius: 100px;
+                    "
+                    >Active</span
+                  >
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 16px 18px;
+                  ">
+                  <div style="font-size: 24px">🟠</div>
+                  <div style="flex: 1">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--ink);
+                      ">
+                      HubSpot
+                    </div>
+                    <div style="font-size: 11px; color: var(--ink3)">
+                      CRM sync enabled
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      background: #d1fae5;
+                      color: #065f46;
+                      font-size: 10.5px;
+                      font-weight: 700;
+                      padding: 2px 8px;
+                      border-radius: 100px;
+                    "
+                    >Active</span
+                  >
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 16px 18px;
+                  ">
+                  <div style="font-size: 24px">🐙</div>
+                  <div style="flex: 1">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--ink);
+                      ">
+                      GitHub
+                    </div>
+                    <div style="font-size: 11px; color: var(--ink3)">
+                      3 repos linked
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      background: #d1fae5;
+                      color: #065f46;
+                      font-size: 10.5px;
+                      font-weight: 700;
+                      padding: 2px 8px;
+                      border-radius: 100px;
+                    "
+                    >Active</span
+                  >
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 16px 18px;
+                  ">
+                  <div style="font-size: 24px">💳</div>
+                  <div style="flex: 1">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--ink);
+                      ">
+                      Stripe
+                    </div>
+                    <div style="font-size: 11px; color: var(--ink3)">
+                      Payments connected
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      background: #d1fae5;
+                      color: #065f46;
+                      font-size: 10.5px;
+                      font-weight: 700;
+                      padding: 2px 8px;
+                      border-radius: 100px;
+                    "
+                    >Active</span
+                  >
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 16px 18px;
+                    cursor: pointer;
+                    border-style: dashed;
+                  "
+                  onmouseover="this.style.borderColor='var(--acc)'"
+                  onmouseout="this.style.borderColor='var(--bdr)'">
+                  <div style="font-size: 24px">📊</div>
+                  <div style="flex: 1">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--ink);
+                      ">
+                      Salesforce
+                    </div>
+                    <div style="font-size: 11px; color: var(--ink3)">
+                      Not connected
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      background: var(--bg);
+                      color: var(--ink3);
+                      font-size: 10.5px;
+                      font-weight: 700;
+                      padding: 2px 8px;
+                      border-radius: 100px;
+                      border: 1px solid var(--bdr);
+                    "
+                    >Connect</span
+                  >
+                </div>
+                <div
+                  class="dc"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 16px 18px;
+                    cursor: pointer;
+                    border-style: dashed;
+                  "
+                  onmouseover="this.style.borderColor='var(--acc)'"
+                  onmouseout="this.style.borderColor='var(--bdr)'">
+                  <div style="font-size: 24px">📝</div>
+                  <div style="flex: 1">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--ink);
+                      ">
+                      Notion
+                    </div>
+                    <div style="font-size: 11px; color: var(--ink3)">
+                      Not connected
+                    </div>
+                  </div>
+                  <span
+                    style="
+                      background: var(--bg);
+                      color: var(--ink3);
+                      font-size: 10.5px;
+                      font-weight: 700;
+                      padding: 2px 8px;
+                      border-radius: 100px;
+                      border: 1px solid var(--bdr);
+                    "
+                    >Connect</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ── SETTINGS PANEL ── -->
+            <div class="dash-panel" id="panel-settings">
+              <div class="dsh"><span>Settings</span></div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                  margin-top: 4px;
+                ">
+                <div class="dc">
+                  <div
+                    style="
+                      font-size: 13px;
+                      font-weight: 700;
+                      color: var(--ink);
+                      margin-bottom: 16px;
+                    ">
+                    Profile settings
+                  </div>
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 1fr 1fr;
+                      gap: 12px;
+                    ">
+                    <div class="fg">
+                      <label class="lbl">First name</label
+                      ><input class="finput" value="James" />
+                    </div>
+                    <div class="fg">
+                      <label class="lbl">Last name</label
+                      ><input class="finput" value="Kim" />
+                    </div>
+                    <div class="fg" style="grid-column: span 2">
+                      <label class="lbl">Email</label
+                      ><input
+                        class="finput"
+                        value="james@company.com"
+                        type="email" />
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-p btn-sm"
+                    style="margin-top: 14px"
+                    onclick="showToast('✅ Profile saved!')">
+                    Save changes
+                  </button>
+                </div>
+                <div class="dc">
+                  <div
+                    style="
+                      font-size: 13px;
+                      font-weight: 700;
+                      color: var(--ink);
+                      margin-bottom: 16px;
+                    ">
+                    Notifications
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 12px">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div
+                          style="
+                            font-size: 13px;
+                            font-weight: 500;
+                            color: var(--ink);
+                          ">
+                          Email notifications
+                        </div>
+                        <div style="font-size: 11.5px; color: var(--ink3)">
+                          Receive alerts by email
+                        </div>
+                      </div>
+                      <div
+                        onclick="this.style.background=this.style.background==='rgb(108,92,231)'?'var(--bdr2)':'rgb(108,92,231)'"
+                        style="
+                          width: 42px;
+                          height: 22px;
+                          background: rgb(108, 92, 231);
+                          border-radius: 100px;
+                          position: relative;
+                          cursor: pointer;
+                          transition: background 0.2s;
+                        ">
+                        <div
+                          style="
+                            position: absolute;
+                            top: 3px;
+                            left: calc(100% - 19px);
+                            width: 16px;
+                            height: 16px;
+                            background: #fff;
+                            border-radius: 50%;
+                            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                          "></div>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div
+                          style="
+                            font-size: 13px;
+                            font-weight: 500;
+                            color: var(--ink);
+                          ">
+                          Push notifications
+                        </div>
+                        <div style="font-size: 11.5px; color: var(--ink3)">
+                          In-app alerts
+                        </div>
+                      </div>
+                      <div
+                        onclick="this.style.background=this.style.background==='rgb(108,92,231)'?'var(--bdr2)':'rgb(108,92,231)'"
+                        style="
+                          width: 42px;
+                          height: 22px;
+                          background: var(--bdr2);
+                          border-radius: 100px;
+                          position: relative;
+                          cursor: pointer;
+                          transition: background 0.2s;
+                        ">
+                        <div
+                          style="
+                            position: absolute;
+                            top: 3px;
+                            left: 3px;
+                            width: 16px;
+                            height: 16px;
+                            background: #fff;
+                            border-radius: 50%;
+                            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                          "></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc">
+                  <div
+                    style="
+                      font-size: 13px;
+                      font-weight: 700;
+                      color: var(--ink);
+                      margin-bottom: 16px;
+                    ">
+                    Appearance
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                    ">
+                    <div>
+                      <div
+                        style="
+                          font-size: 13px;
+                          font-weight: 500;
+                          color: var(--ink);
+                        ">
+                        Dark mode
+                      </div>
+                      <div style="font-size: 11.5px; color: var(--ink3)">
+                        Toggle dark/light theme
+                      </div>
+                    </div>
+                    <button class="btn btn-o btn-sm" onclick="toggleDark()">
+                      Toggle theme 🌙
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── BILLING PANEL ── -->
+            <div class="dash-panel" id="panel-billing">
+              <div class="dsh"><span>Billing</span></div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                  margin-top: 4px;
+                ">
+                <div
+                  class="dc"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(108, 92, 231, 0.08),
+                      rgba(162, 155, 254, 0.05)
+                    );
+                    border-color: rgba(108, 92, 231, 0.2);
+                  ">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: flex-start;
+                      justify-content: space-between;
+                      margin-bottom: 4px;
+                    ">
+                    <div>
+                      <div
+                        style="
+                          font-size: 12px;
+                          font-family: var(--fm);
+                          color: var(--acc);
+                          text-transform: uppercase;
+                          letter-spacing: 0.1em;
+                          margin-bottom: 6px;
+                        ">
+                        Current Plan
+                      </div>
+                      <div
+                        style="
+                          font-size: 24px;
+                          font-weight: 800;
+                          color: var(--ink);
+                          font-family: var(--fh);
+                        ">
+                        Pro Plan
+                      </div>
+                      <div
+                        style="
+                          font-size: 13px;
+                          color: var(--ink2);
+                          margin-top: 4px;
+                        ">
+                        $39/month · Renews July 28, 2026
+                      </div>
+                    </div>
+                    <span
+                      style="
+                        background: rgba(108, 92, 231, 0.12);
+                        color: var(--acc);
+                        font-size: 11px;
+                        font-weight: 700;
+                        padding: 4px 12px;
+                        border-radius: 100px;
+                        border: 1px solid rgba(108, 92, 231, 0.2);
+                      "
+                      >Active</span
+                    >
+                  </div>
+                  <button
+                    class="btn btn-p btn-sm"
+                    style="margin-top: 14px"
+                    onclick="goView('onboarding')">
+                    Upgrade to Enterprise →
+                  </button>
+                </div>
+                <div class="dc">
+                  <div
+                    style="
+                      font-size: 13px;
+                      font-weight: 700;
+                      color: var(--ink);
+                      margin-bottom: 14px;
+                    ">
+                    Payment method
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 12px;
+                      background: var(--bg);
+                      border-radius: var(--r);
+                      border: 1px solid var(--bdr);
+                    ">
+                    <div style="font-size: 22px">💳</div>
+                    <div>
+                      <div
+                        style="
+                          font-size: 13px;
+                          font-weight: 600;
+                          color: var(--ink);
+                        ">
+                        Visa ending in 4242
+                      </div>
+                      <div style="font-size: 11.5px; color: var(--ink3)">
+                        Expires 12/2027
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn-o btn-sm"
+                      style="margin-left: auto"
+                      onclick="showToast('💳 Card update form coming soon!')">
+                      Update
+                    </button>
+                  </div>
+                </div>
+                <div class="dc">
+                  <div
+                    style="
+                      font-size: 13px;
+                      font-weight: 700;
+                      color: var(--ink);
+                      margin-bottom: 12px;
+                    ">
+                    Recent invoices
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 0">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 0;
+                        border-bottom: 1px solid var(--bdr);
+                      ">
+                      <div>
+                        <div style="font-size: 13px; color: var(--ink)">
+                          June 2026
+                        </div>
+                        <div style="font-size: 11px; color: var(--ink3)">
+                          Pro Plan
+                        </div>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 10px">
+                        <span
+                          style="
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: var(--ink);
+                          "
+                          >$39.00</span
+                        ><span
+                          style="
+                            background: #d1fae5;
+                            color: #065f46;
+                            font-size: 10px;
+                            font-weight: 700;
+                            padding: 2px 7px;
+                            border-radius: 100px;
+                          "
+                          >Paid</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 0;
+                        border-bottom: 1px solid var(--bdr);
+                      ">
+                      <div>
+                        <div style="font-size: 13px; color: var(--ink)">
+                          May 2026
+                        </div>
+                        <div style="font-size: 11px; color: var(--ink3)">
+                          Pro Plan
+                        </div>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 10px">
+                        <span
+                          style="
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: var(--ink);
+                          "
+                          >$39.00</span
+                        ><span
+                          style="
+                            background: #d1fae5;
+                            color: #065f46;
+                            font-size: 10px;
+                            font-weight: 700;
+                            padding: 2px 7px;
+                            border-radius: 100px;
+                          "
+                          >Paid</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 0;
+                      ">
+                      <div>
+                        <div style="font-size: 13px; color: var(--ink)">
+                          April 2026
+                        </div>
+                        <div style="font-size: 11px; color: var(--ink3)">
+                          Pro Plan
+                        </div>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 10px">
+                        <span
+                          style="
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: var(--ink);
+                          "
+                          >$39.00</span
+                        ><span
+                          style="
+                            background: #d1fae5;
+                            color: #065f46;
+                            font-size: 10px;
+                            font-weight: 700;
+                            padding: 2px 7px;
+                            border-radius: 100px;
+                          "
+                          >Paid</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./java.js"></script>
+  </body>
+</html>
